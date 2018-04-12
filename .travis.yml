@@ -2,7 +2,7 @@ services:
 - postgresql
 before_script:
  - psql -c 'create database cfdb;' -U postgres
- - psql -U postgres -d cfdb -f scripts/database/create_tables.sql
+ - psql -U postgres -d cfdb -f script/database/create_tables.sql                 
 # - psql -U postgres -d demoiselledb -f scripts/database/db_inserts_script.sql
 # - cd src/Demoiselle
 # - ls
