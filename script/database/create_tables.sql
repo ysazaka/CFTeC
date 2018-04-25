@@ -27,3 +27,14 @@ create table Host (
     codigo integer NOT NULL,
     Constraint cod_pkey PRIMARY KEY (codigo)
 )
+
+
+-- Athos Castro Moreno
+
+CREATE TABLE public.content
+(
+    codigo integer not null,
+    tipo_mensagem text,
+    conteudo text,
+    constraint content_pkey primary key (codigo)
+)
