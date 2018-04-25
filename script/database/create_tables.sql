@@ -60,5 +60,9 @@ CREATE TABLE public.city
 	constraint codigo_pkey primary key (codigo)
 );
 
+-- Responsavel Alex Jussiani
+CREATE TABLE public.Arctifact 
+(
 
+);
 
