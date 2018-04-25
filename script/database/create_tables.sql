@@ -21,3 +21,9 @@ CREATE TABLE public.message(
 CREATE  TABLE  public .project (
 )
 
+
+-- Danilo Morita Host (código)
+create table Host (
+    codigo integer NOT NULL,
+    Constraint cod_pkey PRIMARY KEY (codigo)
+)
