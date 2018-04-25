@@ -48,13 +48,15 @@ CREATE TABLE public.content
 CREATE TABLE public.state
 (
     codigo integer NOT NULL,
+    nome character varying(255),
+    CONSTRAINT teste_pkey PRIMARY KEY (codigo)
 );
 
 -- Responsavel Lucas Concato
 CREATE TABLE public.city 
 (
 	codigo integer not null;
-	nome character varying(255),
+	nome varchar(255),
 	constraint codigo_pkey primary key (codigo)
 );
 
