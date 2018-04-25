@@ -25,5 +25,5 @@ CREATE  TABLE  public .project (
 -- Responsavel Danilo Missao Morita
 CREATE TABLE public.host (
     codigo integer NOT NULL,
-    Constraint cod_pkey PRIMARY KEY (codigo)
+    Constraint codigo_pkey PRIMARY KEY (codigo)
 )
