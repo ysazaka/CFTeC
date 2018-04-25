@@ -1,5 +1,8 @@
 -- script para criacao de tabelas no banco de dados
 --
+--antes de cada tabela o nome do responsavel deve ser informado
+
+--Responsavel: Alexandre L Erario
 CREATE TABLE public.teste
 (
     codigo integer NOT NULL,
