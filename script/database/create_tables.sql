@@ -42,3 +42,11 @@ CREATE TABLE public.content
     conteudo text,
     constraint content_pkey primary key (codigo)
 );
+
+-- Responsavel Luis Othavio
+
+CREATE TABLE public.state
+(
+    codigo integer NOT NULL,
+);
+
