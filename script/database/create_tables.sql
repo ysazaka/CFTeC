@@ -10,3 +10,8 @@ CREATE TABLE public.teste
     CONSTRAINT teste_pkey PRIMARY KEY (codigo)
 )
 -- As tabelas corretas devem ser criadas a partir daqui.
+--Responsavel: Diego Vilella
+CREATE TABLE public.message(
+    codigo integer NOT NULL,
+     CONSTRAINT mensage_pkey PRIMARY KEY (codigo)
+)
