@@ -7,6 +7,7 @@ CREATE TABLE public.teste
 (
     codigo integer NOT NULL,
     nome character varying(255),
+    fruta abacate (300),
     CONSTRAINT teste_pkey PRIMARY KEY (codigo)
 )
 -- As tabelas corretas devem ser criadas a partir daqui.
