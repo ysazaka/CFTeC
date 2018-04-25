@@ -48,5 +48,6 @@ CREATE TABLE public.content
 CREATE TABLE public.state
 (
     codigo integer NOT NULL,
+    nome varchar(255)
 );
 
