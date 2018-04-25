@@ -42,3 +42,27 @@ CREATE TABLE public.content
     conteudo text,
     constraint content_pkey primary key (codigo)
 );
+
+-- Responsavel Luis Othavio
+
+CREATE TABLE public.state
+(
+    codigo integer NOT NULL,
+    nome varchar(255),
+    CONSTRAINT state_pkey PRIMARY KEY (codigo)
+);
+
+-- Responsavel Lucas Concato
+CREATE TABLE public.city 
+(
+	codigo integer not null;
+	nome character varying(255),
+	constraint codigo_pkey primary key (codigo)
+);
+
+-- Responsavel Alex Jussiani
+CREATE TABLE public.Arctifact 
+(
+
+);
+
