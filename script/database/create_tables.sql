@@ -25,10 +25,10 @@ CREATE  TABLE  public.project (
 )
 
 
--- Danilo Morita Host (código)
-create table Host (
+-- Responsavel Danilo Missao Morita
+create table public.host (
     codigo integer NOT NULL,
-    Constraint cod_pkey PRIMARY KEY (codigo)
+    Constraint codigo_pkey PRIMARY KEY (codigo)
 )
 
 
