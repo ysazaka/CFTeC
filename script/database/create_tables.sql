@@ -18,7 +18,7 @@ CREATE TABLE public.message(
 
 
 -- Responsavel Sirnande dos Santos Lima
-CREATE  TABLE  public .project (
+CREATE  TABLE  public.project (
 )
 
 
