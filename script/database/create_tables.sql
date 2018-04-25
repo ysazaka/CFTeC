@@ -23,7 +23,7 @@ CREATE  TABLE  public .project (
 
 
 -- Responsavel Danilo Missao Morita
-CREATE TABLE public.Host (
+CREATE TABLE public.host (
     codigo integer NOT NULL,
     Constraint cod_pkey PRIMARY KEY (codigo)
 )
