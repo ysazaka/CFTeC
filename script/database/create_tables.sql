@@ -18,12 +18,26 @@ CREATE TABLE public.message(
 
 
 -- Responsavel Sirnande dos Santos Lima
-CREATE  TABLE  public .project (
+CREATE  TABLE  public.project (
+    codigo integer NOT NULL,
+    nome varchar(45), 
+    descrição varchar(120)
 )
 
 
--- Responsavel Danilo Missao Morita
-CREATE TABLE public.host (
+-- Danilo Morita Host (código)
+create table Host (
     codigo integer NOT NULL,
-    Constraint codigo_pkey PRIMARY KEY (codigo)
+    Constraint cod_pkey PRIMARY KEY (codigo)
+)
+
+
+-- Athos Castro Moreno
+
+CREATE TABLE public.content
+(
+    codigo integer not null,
+    tipo_mensagem text,
+    conteudo text,
+    constraint content_pkey primary key (codigo)
 )
