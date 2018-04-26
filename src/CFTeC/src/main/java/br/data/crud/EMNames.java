@@ -10,6 +10,6 @@ package br.data.crud;
  * @author alexandrelerario
  */
 public class EMNames {
-    public static final String EMN1 = "DocMEPU";
+    public static final String EMN1 = "utfpr.cp_CFTeCdb";
  //comentario novo
 }
