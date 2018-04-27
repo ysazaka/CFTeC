@@ -66,3 +66,12 @@ CREATE TABLE public.Arctifact
 
 );
 
+-- Responsavel Glauco Yoshikazu Sazaka
+CREATE TABLE public.colaborador
+(
+	codigo INTEGER NOT NULL,
+	nome VARCHAR(255) NOT NULL,
+	data_nascimento DATE NOT NULL,
+	CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
+);
+
