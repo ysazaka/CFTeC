@@ -66,3 +66,10 @@ CREATE TABLE public.Arctifact
 
 );
 
+--Responsavel: Gabriel Tobias
+CREATE TABLE public.type
+(
+    codigo integer NOT NULL,
+    nome character varying(150),
+    CONSTRAINT type_pkey PRIMARY KEY (codigo)
+);
