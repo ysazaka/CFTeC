@@ -61,9 +61,11 @@ CREATE TABLE public.city
 );
 
 -- Responsavel Alex Jussiani
-CREATE TABLE public.Arctifact 
+CREATE TABLE public.arctifact  
 (
-
+	codigo integer not null,
+	artefato character varying(200),
+	constraint codigo_pkey primary key (codigo)
 );
 
 --Responsavel: Gabriel Tobias
