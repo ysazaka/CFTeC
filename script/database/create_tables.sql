@@ -75,3 +75,11 @@ CREATE TABLE public.type
     nome character varying(150),
     CONSTRAINT type_pkey PRIMARY KEY (codigo)
 );
+
+--Responsavel: Lais Macedo
+CREATE TABLE public.adress
+(
+codigo INTEGER NOT NULL,
+logradouro TEXT,
+CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
+);
