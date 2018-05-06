@@ -83,3 +83,11 @@ codigo INTEGER NOT NULL,
 logradouro TEXT,
 CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
 );
+
+--Responsavel: Arcádio Macedo
+CREATE TABLE public.postalcode
+(
+codigo INTEGER NOT NULL,
+nome CHAR(100),
+CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
+);
