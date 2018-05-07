@@ -92,3 +92,14 @@ codigo INTEGER NOT NULL,
 nome CHAR(100),
 CONSTRAINT codigo_pkey PRIMARY KEY (codigo)
 );
+
+-- Responsavel: Glauco Yoshikazu Sazaka
+CREATE TABLE public.collaborator
+(
+	codigo INTEGER NOT NULL,
+	nome VARCHAR(255) NOT NULL,
+	data_nascimento DATE NOT NULL,
+	codigo_host INTEGER REFERENCES public.host (codigo),
+	codigo_adress INTEGER REFERENCES public.adress (codigo),
+	CONSTRAINT codigo_pk PRIMARY KEY (codigo)
+);
