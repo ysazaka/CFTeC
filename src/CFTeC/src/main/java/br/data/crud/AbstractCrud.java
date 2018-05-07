@@ -8,9 +8,6 @@ package br.data.crud;
 import java.util.List;
 import javax.persistence.EntityManager;
 
-
-
-
 public abstract class AbstractCrud<T> {
 
     private Class<T> entityClass;
@@ -21,16 +18,26 @@ public abstract class AbstractCrud<T> {
 
     protected abstract EntityManager getEntityManager();
 
-    public void persist(T entity) {
-        getEntityManager().getTransaction().begin();
-        getEntityManager().persist(entity);
-        getEntityManager().getTransaction().commit();
+    public Exception persist(T entity) {
+        try {
+            getEntityManager().getTransaction().begin();
+            getEntityManager().persist(entity);
+            getEntityManager().getTransaction().commit();
+            return null;
+        } catch (Exception e) {
+            return e;
+        }
     }
 
-    public void merge(T entity) {
-        getEntityManager().getTransaction().begin();
-        getEntityManager().merge(entity);
-        getEntityManager().getTransaction().commit();
+    public Exception merge(T entity) {
+        try {
+            getEntityManager().getTransaction().begin();
+            getEntityManager().merge(entity);
+            getEntityManager().getTransaction().commit();
+            return null;
+        } catch (Exception e) {
+            return e;
+        }
     }
 
     public void remove(T entity) {
@@ -44,12 +51,12 @@ public abstract class AbstractCrud<T> {
     }
 
     public List<T> getAll() {
-        try{
-        javax.persistence.criteria.CriteriaQuery cq;
-        cq = getEntityManager().getCriteriaBuilder().createQuery();
-        cq.select(cq.from(entityClass));
-        return getEntityManager().createQuery(cq).getResultList();
-        }catch(Exception e){
+        try {
+            javax.persistence.criteria.CriteriaQuery cq;
+            cq = getEntityManager().getCriteriaBuilder().createQuery();
+            cq.select(cq.from(entityClass));
+            return getEntityManager().createQuery(cq).getResultList();
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         return null;
@@ -71,6 +78,5 @@ public abstract class AbstractCrud<T> {
         javax.persistence.Query q = getEntityManager().createQuery(cq);
         return ((Long) q.getSingleResult()).intValue();
     }
-    
+
 }
-   
