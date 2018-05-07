@@ -15,7 +15,8 @@ CREATE TABLE public.teste
 CREATE  TABLE  public.project (
     codigo integer NOT NULL,
     nome varchar(45), 
-    descrição varchar(120)
+    descrição varchar(120),
+    CONSTRAINT project_pkey PRIMARY KEY (codigo)
 );
 
 --Responsavel: Diego Vilella
