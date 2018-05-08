@@ -101,5 +101,5 @@ CREATE TABLE public.collaborator
 	data_nascimento DATE NOT NULL,
 	codigo_host INTEGER REFERENCES public.host (codigo),
 	codigo_adress INTEGER REFERENCES public.adress (codigo),
-	CONSTRAINT codigo_pk PRIMARY KEY (codigo)
+	CONSTRAINT collaborator_pk PRIMARY KEY (codigo)
 );
